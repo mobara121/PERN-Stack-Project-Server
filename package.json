@@ -5,9 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./node_modules/http-server/bin/http-server"
+    "start": "node app.js",
+    "dev": "nodemon"
   },
-  "author": "YOUR NAME HERE",
+  "author": "MO",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
