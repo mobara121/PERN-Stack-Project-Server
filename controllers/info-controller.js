@@ -7,6 +7,7 @@ var Info = sequelize.import('../models/info.js')
 router.post('/create', (req, res) => {
    const infoFromRequest ={
        zipcode: req.body.info.zipcode,
+       name: req.body.info.name,
        price: req.body.info.price,
        topping: req.body.info.topping,
        soup: req.body.info.soup,

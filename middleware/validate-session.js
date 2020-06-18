@@ -19,7 +19,7 @@ module.exports = function(req, res, next){
                         res.status(401).send({error: 'Not authorized'});
                     });
                 } else {
-                    res.status(400).send({error: 'Not authrized'});
+                    res.status(400).send({error: err});
                 }
             });
         }
