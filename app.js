@@ -6,7 +6,7 @@ var user = require('./controllers/usercontroller')
 var info = require('./controllers/info-controller')
 var sequelize = require('./db');
 
-sequelize.sync(); //to reset tables after changing models, input {force: true} into the parens, save and let run, then delete and let run
+sequelize.sync({force: true}); //to reset tables after changing models, input {force: true} into the parens, save and let run, then delete and let run
 
 app.use(express.json());
 app.use(require('./middleware/headers'));
